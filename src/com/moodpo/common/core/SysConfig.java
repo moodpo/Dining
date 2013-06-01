@@ -28,12 +28,37 @@ public class SysConfig {
 	 * 管理员邮箱
 	 */
 	public static String ADMIN_EMAIL = "AdminEmail";
+	
+	/**
+	 * 邮件服务器 smtp
+	 */
+	public static String MAIL_SERVER = "MailServer";
+	
+	/**
+	 * 寄件人邮箱地址
+	 */
+	public static String MAIL_FROM = "MailFrom";
+	
+	/**
+	 * 邮件服务端口
+	 */
+	public static String MAIL_PORT = "MailPort";
+	
+	/**
+	 * 邮箱用户名
+	 */
+	public static String MAIL_USER = "MailUser";
+	
+	/**
+	 * 邮箱密码
+	 */
+	public static String MAIL_PASSWORD = "MailPassword";
 
 	private static Properties SYSTEM_CONFIG = new Properties();
 
 	public static String getConfig(String key) {
 
-		String result = SYSTEM_CONFIG.getProperty(key);
+		String result = SYSTEM_CONFIG.getProperty(key.trim());
 		try {
 			result = result.trim();
 			result = new String(result.getBytes("ISO-8859-1"), "utf-8");
