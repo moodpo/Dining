@@ -36,7 +36,7 @@ public class MailUtils {
 		
 		SimpleMailMessage mailMessage = new SimpleMailMessage();
 		mailMessage.setTo(toMail);
-		mailMessage.setFrom(SysConfig.getConfig(SysConfig.MAIL_FROM));
+		mailMessage.setFrom(SysConfig.getConfig(SysConfig.SYSTEM_EMAIL));
 		mailMessage.setSubject(subject);
 		mailMessage.setText(text);
 		
@@ -71,7 +71,7 @@ public class MailUtils {
         MimeMessageHelper messageHelper = new MimeMessageHelper(mailMessage); 
 		
 		messageHelper.setTo(toMail);
-		messageHelper.setFrom(SysConfig.getConfig(SysConfig.MAIL_FROM));
+		messageHelper.setFrom(SysConfig.getConfig(SysConfig.SYSTEM_EMAIL));
         messageHelper.setSubject(subject);
         messageHelper.setText(text,true);
 		

@@ -20,24 +20,14 @@ public class SysConfig {
 	private static Logger logger = Logger.getLogger(SysConfig.class);
 
 	/**
-	 * 邮箱后缀
+	 * 系统邮箱
 	 */
-	public static String EMAIL_SUFFIX = "EmailSuffix";
-
-	/**
-	 * 管理员邮箱
-	 */
-	public static String ADMIN_EMAIL = "AdminEmail";
+	public static String SYSTEM_EMAIL = "SystemEmail";
 	
 	/**
 	 * 邮件服务器 smtp
 	 */
 	public static String MAIL_SERVER = "MailServer";
-	
-	/**
-	 * 寄件人邮箱地址
-	 */
-	public static String MAIL_FROM = "MailFrom";
 	
 	/**
 	 * 邮件服务端口

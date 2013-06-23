@@ -44,6 +44,6 @@
 	
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
-	<context:component-scan base-package="com.moodpo.system"></context:component-scan>
+	<context:component-scan base-package="com.moodpo.dining"></context:component-scan>
 
 </beans>
